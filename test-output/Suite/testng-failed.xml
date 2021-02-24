@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="RestAPI">
+    <classes>
+      <class name="demoPackage.Twitter"/>
+      <class name="demoPackage.basic6"/>
+      <class name="demoPackage.basic"/>
+      <class name="demoPackage.excelDriven"/>
+      <class name="demoPackage.basic5"/>
+      <class name="demoPackage.JiraTestBasic1"/>
+      <class name="demoPackage.basic4"/>
+      <class name="demoPackage.basic3"/>
+      <class name="demoPackage.basic2"/>
+    </classes>
+  </test> <!-- RestAPI -->
+  <test name="RestAPI(failed)">
+    <classes>
+      <class name="demoPackage.basic2">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- demoPackage.basic2 -->
+      <class name="demoPackage.excelDriven">
+        <methods>
+          <include name="deleteBookData" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- demoPackage.excelDriven -->
+      <class name="demoPackage.JiraTestBasic1">
+        <methods>
+          <include name="updateCommentForIssueInJira"/>
+          <include name="addCommentForIssueInJira"/>
+          <include name="createAnIssueInJira"/>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- demoPackage.JiraTestBasic1 -->
+      <class name="demoPackage.basic4">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- demoPackage.basic4 -->
+      <class name="demoPackage.basic3">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- demoPackage.basic3 -->
+      <class name="demoPackage.Twitter">
+        <methods>
+          <include name="getLatestTweet"/>
+          <include name="deleteTweet"/>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- demoPackage.Twitter -->
+      <class name="demoPackage.basic6">
+        <methods>
+          <include name="test"/>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- demoPackage.basic6 -->
+    </classes>
+  </test> <!-- RestAPI(failed) -->
+</suite> <!-- Failed suite [Suite] -->
